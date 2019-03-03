@@ -9,5 +9,5 @@ def prime?(num)
   range.each do |x|
     array << num % x == 0
   end
-  array.include?(false) ? false : true
+  array.include?(true) ? false : true
 end
