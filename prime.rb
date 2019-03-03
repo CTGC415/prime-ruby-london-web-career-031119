@@ -6,8 +6,8 @@ def prime?(num)
   array = []
   range = [1..(num - 1)]
   range.shift
-  range.each do |x|
-    num % x == 0 ? array << false : array << true
+  range.each! do |x|
+    x = num % x == 0
   end
   array.include?(false) ? false : true
 end
