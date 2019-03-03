@@ -3,11 +3,9 @@ def prime?(num)
   if num <= 1
     return false
   end
-  array = []
-  range = Array.new(1..(num - 1))
-  range.shift
-  range.each do |x|
-    array << num % x == 0
+
+  for test in (2..num-1)_a do
+    num % test == 0 ? return false : true
   end
-  array.include?(true) ? false : true
+
 end
