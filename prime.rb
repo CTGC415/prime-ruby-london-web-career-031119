@@ -4,7 +4,7 @@ def prime?(num)
   range.shift
   range each {
     |x|
-    if ((num % x) = 0 )
+    if ((num % x) == 0 )
       return false
     end
   }
