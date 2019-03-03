@@ -5,7 +5,8 @@ def prime?(num)
   end
 
   for test in (2..num-1).to_a do
-    num % test == 0 ? return false : true
+    num % test == 0 ? test = false : test = true
   end
 
+  test.include?(false) ? false : true
 end
