@@ -7,7 +7,7 @@ def prime?(num)
   range = [1..(num - 1)]
   range.shift
   range.each do |x|
-    x = num % x == 0
+    array << num % x == 0
   end
-  range.include?(true) ? false : true
+  array.include?(true) ? false : true
 end
