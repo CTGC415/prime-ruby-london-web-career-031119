@@ -8,5 +8,5 @@ def prime?(num)
     num % test == 0 ? test = false : test = true
   end
 
-  test.include?(false) ? false : true
+  test.include?(false) ? true : false
 end
