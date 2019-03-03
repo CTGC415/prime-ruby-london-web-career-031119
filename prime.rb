@@ -7,6 +7,7 @@ def prime?(num)
   range.shift
   range.each do |x|
     if num % x == 0
+      binding.pry
       return false
     end
   end
