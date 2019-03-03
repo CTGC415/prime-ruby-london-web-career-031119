@@ -4,7 +4,7 @@ def prime?(num)
     return false
   end
   array = []
-  range = [1..(num - 1)]
+  range = Array.new(1..(num - 1))
   range.shift
   range.each do |x|
     array << num % x == 0
