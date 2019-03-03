@@ -10,4 +10,5 @@ def prime?(num)
     array << num % x == 0
   end
   array.include?(true) ? false : true
+  puts array
 end
