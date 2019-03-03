@@ -3,12 +3,11 @@ def prime?(num)
   if num <= 1
     return false
   end
+  array = []
   range = [1..(num - 1)]
   range.shift
   range.each do |x|
-    if num % x == 0
-      return false
-    end
+    num % x == 0 ? array << false : array << true
   end
-  true
+  array.include?(false) ? false : true
 end
